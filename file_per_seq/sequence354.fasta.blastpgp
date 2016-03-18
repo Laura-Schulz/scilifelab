@@ -1,0 +1,229 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= d1uugd_.d.17.5.1
+         (82 letters)
+
+Database: uniref90.fasta 
+           40,253,516 sequences; 13,556,848,365 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+UniRef90_P14739 Uracil-DNA glycosylase inhibitor n=1 Tax=Bacillu...   163   2e-38
+
+>UniRef90_P14739 Uracil-DNA glycosylase inhibitor n=1 Tax=Bacillus
+          phage PBS2 RepID=UNGI_BPPB2
+          Length = 84
+
+ Score =  163 bits (413), Expect = 2e-38,   Method: Compositional matrix adjust.
+ Identities = 82/82 (100%), Positives = 82/82 (100%)
+
+Query: 1  NLSDIIEKETGKQLVIQESILMLPEEVEEVIGNKPESDILVHTAYDESTDENVMLLTSDA 60
+          NLSDIIEKETGKQLVIQESILMLPEEVEEVIGNKPESDILVHTAYDESTDENVMLLTSDA
+Sbjct: 3  NLSDIIEKETGKQLVIQESILMLPEEVEEVIGNKPESDILVHTAYDESTDENVMLLTSDA 62
+
+Query: 61 PEYKPWALVIQDSNGENKIKML 82
+          PEYKPWALVIQDSNGENKIKML
+Sbjct: 63 PEYKPWALVIQDSNGENKIKML 84
+
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+UniRef90_P14739 Uracil-DNA glycosylase inhibitor n=1 Tax=Bacillu...   152   3e-35
+
+Sequences not found previously or not previously below threshold:
+
+UniRef90_E0MRZ1 Twin-arginine translocation pathway signal n=1 T...    37   2.2  
+UniRef90_UPI0006B6BD9B PREDICTED: zinc finger protein OZF-like i...    35   6.2  
+UniRef90_A0A0K0FZ63 Uncharacterized protein n=4 Tax=Strongyloide...    35   7.5  
+
+
+CONVERGED!
+>UniRef90_P14739 Uracil-DNA glycosylase inhibitor n=1 Tax=Bacillus
+          phage PBS2 RepID=UNGI_BPPB2
+          Length = 84
+
+ Score =  152 bits (385), Expect = 3e-35,   Method: Composition-based stats.
+ Identities = 82/82 (100%), Positives = 82/82 (100%)
+
+Query: 1  NLSDIIEKETGKQLVIQESILMLPEEVEEVIGNKPESDILVHTAYDESTDENVMLLTSDA 60
+          NLSDIIEKETGKQLVIQESILMLPEEVEEVIGNKPESDILVHTAYDESTDENVMLLTSDA
+Sbjct: 3  NLSDIIEKETGKQLVIQESILMLPEEVEEVIGNKPESDILVHTAYDESTDENVMLLTSDA 62
+
+Query: 61 PEYKPWALVIQDSNGENKIKML 82
+          PEYKPWALVIQDSNGENKIKML
+Sbjct: 63 PEYKPWALVIQDSNGENKIKML 84
+
+
+>UniRef90_E0MRZ1 Twin-arginine translocation pathway signal n=1
+           Tax=Ahrensia sp. R2A130 RepID=E0MRZ1_9RHOB
+          Length = 562
+
+ Score = 37.0 bits (84), Expect = 2.2,   Method: Composition-based stats.
+ Identities = 18/52 (34%), Positives = 29/52 (55%)
+
+Query: 4   DIIEKETGKQLVIQESILMLPEEVEEVIGNKPESDILVHTAYDESTDENVML 55
+           D +E+     +V   +I++ P +  E+ G KP SD+ V  A   +TD NV+L
+Sbjct: 310 DQLEEWKRDDIVTAATIVVRPNQQAEIDGKKPYSDVRVRRAIQLATDNNVLL 361
+
+
+>UniRef90_UPI0006B6BD9B PREDICTED: zinc finger protein OZF-like
+           isoform X1 n=2 Tax=Salmo salar RepID=UPI0006B6BD9B
+          Length = 556
+
+ Score = 35.5 bits (80), Expect = 6.2,   Method: Composition-based stats.
+ Identities = 14/40 (35%), Positives = 28/40 (70%)
+
+Query: 4   DIIEKETGKQLVIQESILMLPEEVEEVIGNKPESDILVHT 43
+           D+I KE G+  V+++  ++  EE E+V+G + E++ L++T
+Sbjct: 141 DVIVKEEGEPFVVEKEAILRKEEGEDVLGEEEETEDLINT 180
+
+
+>UniRef90_A0A0K0FZ63 Uncharacterized protein n=4 Tax=Strongyloides
+           RepID=A0A0K0FZ63_9BILA
+          Length = 468
+
+ Score = 35.5 bits (80), Expect = 7.5,   Method: Composition-based stats.
+ Identities = 21/56 (37%), Positives = 31/56 (55%)
+
+Query: 1   NLSDIIEKETGKQLVIQESILMLPEEVEEVIGNKPESDILVHTAYDESTDENVMLL 56
+           N S ++++  G+ L    S+L + +E E VIG   + DIL    + E T E VMLL
+Sbjct: 343 NQSSLLKEAVGRLLRNSLSVLPVIDEEEHVIGVITKRDILNELRFSERTYEEVMLL 398
+
+
+  Database: uniref90.fasta
+    Posted date:  Mar 1, 2016  2:44 PM
+  Number of letters in database: 999,999,538
+  Number of sequences in database:  2,602,571
+  
+  Database: /home/lschulz/Downloads/uniref90.fasta.01
+    Posted date:  Mar 1, 2016  2:45 PM
+  Number of letters in database: 999,998,500
+  Number of sequences in database:  2,365,435
+  
+  Database: /home/lschulz/Downloads/uniref90.fasta.02
+    Posted date:  Mar 1, 2016  2:46 PM
+  Number of letters in database: 999,999,816
+  Number of sequences in database:  2,478,377
+  
+  Database: /home/lschulz/Downloads/uniref90.fasta.03
+    Posted date:  Mar 1, 2016  2:47 PM
+  Number of letters in database: 999,999,936
+  Number of sequences in database:  2,874,012
+  
+  Database: /home/lschulz/Downloads/uniref90.fasta.04
+    Posted date:  Mar 1, 2016  2:48 PM
+  Number of letters in database: 999,999,516
+  Number of sequences in database:  3,386,135
+  
+  Database: /home/lschulz/Downloads/uniref90.fasta.05
+    Posted date:  Mar 1, 2016  2:50 PM
+  Number of letters in database: 999,999,691
+  Number of sequences in database:  3,345,820
+  
+  Database: /home/lschulz/Downloads/uniref90.fasta.06
+    Posted date:  Mar 1, 2016  2:51 PM
+  Number of letters in database: 999,999,794
+  Number of sequences in database:  3,333,121
+  
+  Database: /home/lschulz/Downloads/uniref90.fasta.07
+    Posted date:  Mar 1, 2016  2:52 PM
+  Number of letters in database: 999,999,961
+  Number of sequences in database:  3,323,726
+  
+  Database: /home/lschulz/Downloads/uniref90.fasta.08
+    Posted date:  Mar 1, 2016  2:53 PM
+  Number of letters in database: 999,999,995
+  Number of sequences in database:  3,314,676
+  
+  Database: /home/lschulz/Downloads/uniref90.fasta.09
+    Posted date:  Mar 1, 2016  2:54 PM
+  Number of letters in database: 1,000,000,000
+  Number of sequences in database:  3,235,810
+  
+  Database: /home/lschulz/Downloads/uniref90.fasta.10
+    Posted date:  Mar 1, 2016  2:55 PM
+  Number of letters in database: 999,999,854
+  Number of sequences in database:  2,841,309
+  
+  Database: /home/lschulz/Downloads/uniref90.fasta.11
+    Posted date:  Mar 1, 2016  2:56 PM
+  Number of letters in database: 999,999,986
+  Number of sequences in database:  2,888,057
+  
+  Database: /home/lschulz/Downloads/uniref90.fasta.12
+    Posted date:  Mar 1, 2016  2:58 PM
+  Number of letters in database: 999,999,947
+  Number of sequences in database:  2,764,331
+  
+  Database: /home/lschulz/Downloads/uniref90.fasta.13
+    Posted date:  Mar 1, 2016  2:58 PM
+  Number of letters in database: 556,851,831
+  Number of sequences in database:  1,500,136
+  
+Lambda     K      H
+   0.307    0.129    0.347 
+
+Lambda     K      H
+   0.267   0.0404    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 4,147,426,994
+Number of Sequences: 40253516
+Number of extensions: 147038870
+Number of successful extensions: 327549
+Number of sequences better than 10.0: 5
+Number of HSP's better than 10.0 without gapping: 9
+Number of HSP's successfully gapped in prelim test: 6
+Number of HSP's that attempted gapping in prelim test: 327540
+Number of HSP's gapped (non-prelim): 15
+length of query: 82
+length of database: 13,556,848,365
+effective HSP length: 53
+effective length of query: 29
+effective length of database: 11,423,412,017
+effective search space: 331278948493
+effective search space used: 331278948493
+T: 11
+A: 40
+X1: 16 ( 7.1 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 42 (21.6 bits)
+S2: 79 (35.1 bits)
